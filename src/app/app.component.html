@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-light" style="background-color: #e3f2fd">
   <a class="navbar-brand" href="#">
     <img
       src="/assets/logo.png"
@@ -10,6 +10,20 @@
     SmartBlocksCEP
   </a>
   <form class="form-inline">
+    <div class="form-group mr-2">
+      <label for="exampleFormControlSelect1" class="mr-2">Precision Lvl</label>
+      <select
+        class="form-control"
+        id="exampleFormControlSelect1"
+        [(ngModel)]="precision"
+        [ngModelOptions]="{ standalone: true }"
+      >
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
     <button
       class="btn btn-warning my-2 my-sm-0"
       type="submit"
